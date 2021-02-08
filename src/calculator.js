@@ -19,10 +19,10 @@ export default class Calculator {
     if (!seatbelt){
       this.lifeSpan -= 20;
     }
-    if (!!smoke){
+    if (smoke){
       this.lifeSpan -= 10;
     }
-    if (!!drink){
+    if (drink){
       this.lifeSpan -= 10;
     }
   }

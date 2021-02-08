@@ -19,11 +19,12 @@ $(document).ready(function() {
     $('#monkey').fadeOut('slow');
     $('#planets').fadeIn(3000);
     const age = parseInt($('#age').val());
-    const diet = $('input:radio[name=diet]:checked').val();
-    const exercise = $('input:radio[name=exercise]:checked').val();
-    const seatbelt = $('input:radio[name=seatbelt]:checked').val();
-    const smoke = $('input:radio[name=smoke]:checked').val();
-    const drink = $('input:radio[name=drink]:checked').val();
+    const diet = $('input:radio[name=diet]:checked').val() ? 1:0;
+    console.log(diet);
+    const exercise = $('input:radio[name=exercise]:checked').val() ? 1:0;
+    const seatbelt = $('input:radio[name=seatbelt]:checked').val() ? 1:0;
+    const smoke = $('input:radio[name=smoke]:checked').val() ? 1:0;
+    const drink = $('input:radio[name=drink]:checked').val() ? 1:0;
     let calculator = new Calculator(age);
     calculator.lifeExpectancy(diet, exercise, seatbelt, smoke, drink);
     $('.mercury-text').html(`${calculator.ageOnPlanet('Mercury')} Furthermore, ${calculator.yearsLeft('Mercury')}`);
