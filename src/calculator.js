@@ -10,4 +10,7 @@ export default class Calculator {
       'Jupiter': 11.86
     };
   }
+  ageOnPlanet(planet) {
+    return (`On ${[planet]} you are ${Math.floor(this.age / this.planetYears[planet])} years old!`);
+  }
 }
