@@ -72,12 +72,12 @@ describe('Calculator', () => {
     const calculator = new Calculator(100);
     expect(calculator.yearsLeft("Earth")).toEqual("You have surpassed your life expectancy by 5 years!");
   });
-  test('should return years lived past life expectancy if planet is earth', () => {
+  test('should return years lived past life expectancy if planet is mars', () => {
     const calculator = new Calculator(100);
     expect(calculator.yearsLeft("Mars")).toEqual("You have surpassed your life expectancy by 3 years!");
   });
-  test('should return years lived past life expectancy if planet is earth', () => {
-    const calculator = new Calculator(100);
-    expect(calculator.yearsLeft("Jupiter")).toEqual("You have surpassed your life expectancy by 1 years!");
+  test('should return years lived past life expectancy if planet is jupiter', () => {
+    const calculator = new Calculator(125);
+    expect(calculator.yearsLeft("Jupiter")).toEqual("You have surpassed your life expectancy by 3 years!");
   });
 });
