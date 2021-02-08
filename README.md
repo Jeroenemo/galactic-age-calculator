@@ -15,8 +15,8 @@
 
 ## Description
 
-This is a simple webpage designed to demonstrate my ability to build a virtual environment for JavaScript using webpack, and various loaders and plugins. This application will intake your name, and the result of several yes/no questions. Then, it will calculate your age and remaining (or passed!) life expectancy! This site was created with the guidance of **EPICODUS**, the greatest coding bootcamp in the known universe, and google. YOu can visit the page [here.]()
-![Alt text](/assets/images/ss1.png?raw=true "Optional Title")
+This is a simple webpage designed to demonstrate my ability to build a virtual environment for JavaScript using webpack, and various loaders and plugins. This application will intake your name, and the result of several yes/no questions. Then, it will calculate your age and remaining (or passed!) life expectancy! This site was created with the guidance of **EPICODUS**, the greatest coding bootcamp in the known universe, and google. You can visit the page [here.](https://jeroenemo.github.io/static-galactic/)
+
 ## Setup/Installation Requirements
 
 * Download this repository 
