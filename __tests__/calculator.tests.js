@@ -43,6 +43,6 @@ describe('Calculator', () => {
   });
   test('should calculate life expectancy depending on drinking', () => {
     calculator.lifeExpectancy('true', 'true', 'true', 'false', 'true');
-    expect(calculator.lifeSpan).toEqual(55);
+    expect(calculator.lifeSpan).toEqual(85);
   });
 });
