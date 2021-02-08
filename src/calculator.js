@@ -22,6 +22,9 @@ export default class Calculator {
     if (smoke === 'true'){
       this.lifeSpan -= 10;
     }
+    if (drink === 'true'){
+      this.lifeSpan -= 10;
+    }
   }
   ageOnPlanet(planet) {
     return (`On ${[planet]} you are ${Math.floor(this.age / this.planetYears[planet])} years old!`);
