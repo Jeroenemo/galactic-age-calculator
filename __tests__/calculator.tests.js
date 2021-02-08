@@ -81,7 +81,7 @@ describe('Calculator', () => {
     expect(calculator.yearsLeft("Jupiter")).toEqual("You have surpassed your life expectancy by 3 years!");
   });
   test('should return YEAR left if year left is 1', () => {
-    const calculator = new Calculator(96);
+    const calculator = new Calculator(94);
     expect(calculator.yearsLeft("Earth")).toEqual("You have 1 years to live!");
   });
   test('should return YEAR lived past life expectancy if year lived past is 1', () => {
