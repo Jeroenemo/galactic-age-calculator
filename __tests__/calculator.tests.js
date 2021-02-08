@@ -37,4 +37,8 @@ describe('Calculator', () => {
     calculator.lifeExpectancy('true', 'true', 'false');
     expect(calculator.lifeSpan).toEqual(75);
   });
+  test('should calculate life expectancy depending on smoking', () => {
+    calculator.lifeExpectancy('true', 'true', 'true', 'true',);
+    expect(calculator.lifeSpan).toEqual(55);
+  });
 });
