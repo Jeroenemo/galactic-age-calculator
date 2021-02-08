@@ -13,6 +13,9 @@ export default class Calculator {
     if (diet === 'false'){
       this.lifeSpan -= 5;
     }
+    if (exercise === 'false'){
+      this.lifeSpan -= 5;
+    }
   }
   ageOnPlanet(planet) {
     return (`On ${[planet]} you are ${Math.floor(this.age / this.planetYears[planet])} years old!`);

@@ -30,7 +30,7 @@ describe('Calculator', () => {
     expect(calculator.lifeSpan).toEqual(90);
   });
   test('should calculate life expectancy depending on exercise', () => {
-    calculator.lifeExpectancy('false');
+    calculator.lifeExpectancy('true', 'false');
     expect(calculator.lifeSpan).toEqual(95);
   });
 });
