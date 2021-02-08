@@ -16,6 +16,9 @@ export default class Calculator {
     if (exercise === 'false'){
       this.lifeSpan -= 5;
     }
+    if (seatbelt === 'false'){
+      this.lifeSpan -= 20;
+    }
   }
   ageOnPlanet(planet) {
     return (`On ${[planet]} you are ${Math.floor(this.age / this.planetYears[planet])} years old!`);
