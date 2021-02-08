@@ -9,6 +9,13 @@ $(document).ready(function() {
     event.preventDefault();
   });
   $('button#submit').on('click', function() {
+    const input = $.trim($('#age').val());
+
+    if (input  === '') {
+        alert("Please enter your age");
+        return false;
+    }
+
     $('#monkey').fadeOut('slow');
     $('#planets').fadeIn(3000);
     const age = parseInt($('#age').val());
