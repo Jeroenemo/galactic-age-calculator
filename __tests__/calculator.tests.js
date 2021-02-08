@@ -16,14 +16,14 @@ describe('Calculator', () => {
   test('should return user age in Venus years', () => {
     expect(calculator.ageOnPlanet('Venus')).toEqual("On Venus you are 48 years old!");
   });
+  test('should return user age in Earth years', () => {
+    expect(calculator.ageOnPlanet('Earth')).toEqual("On Earth you are 30 years old!");
+  });
   test('should return user age in Mars years', () => {
     expect(calculator.ageOnPlanet('Mars')).toEqual("On Mars you are 15 years old!");
   });
   test('should return user age in Jupiter years', () => {
     expect(calculator.ageOnPlanet('Jupiter')).toEqual("On Jupiter you are 2 years old!");
-  });
-  test('should return user age in Earth years', () => {
-    expect(calculator.ageOnPlanet('Earth')).toEqual("On Earth you are 30 years old!");
   });
   test('should calculate life expectancy depending on diet', () => {
     calculator.lifeExpectancy(false, true, true);
@@ -44,5 +44,8 @@ describe('Calculator', () => {
   test('should calculate life expectancy depending on drinking', () => {
     calculator.lifeExpectancy(true, true, true, false, true);
     expect(calculator.lifeSpan).toEqual(85);
+  });
+  test('should return years left if planet is mercury', () => {
+    expect(calculator.yearsLeft("mercury")).toEqual("You have NaN years to live");
   });
 });
