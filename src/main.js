@@ -11,14 +11,13 @@ $(document).ready(function() {
   $('button#submit').on('click', function() {
     $('#monkey').fadeOut('slow');
     $('#planets').fadeIn(3000);
-    const name = $('#name').val();
     const age = parseInt($('#age').val());
     const diet = $('input:radio[name=diet]:checked').val();
     const exercise = $('input:radio[name=exercise]:checked').val();
     const seatbelt = $('input:radio[name=seatbelt]:checked').val();
     const smoke = $('input:radio[name=smoke]:checked').val();
     const drink = $('input:radio[name=drink]:checked').val();
-    let calculator = new Calculator(name, age);
+    let calculator = new Calculator(age);
     calculator.lifeExpectancy(diet, exercise, seatbelt, smoke, drink);
     $('.mercury-text').html(`${calculator.ageOnPlanet('Mercury')} Furthermore, ${calculator.yearsLeft('Mercury')}`);
     $('.venus-text').html(`${calculator.ageOnPlanet('Venus')} Furthermore, ${calculator.yearsLeft('Venus')}`);
