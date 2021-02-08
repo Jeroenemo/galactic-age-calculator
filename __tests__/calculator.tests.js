@@ -33,4 +33,8 @@ describe('Calculator', () => {
     calculator.lifeExpectancy('true', 'false');
     expect(calculator.lifeSpan).toEqual(90);
   });
+  test('should calculate life expectancy depending on seatbelt use', () => {
+    calculator.lifeExpectancy('true', 'true', 'false');
+    expect(calculator.lifeSpan).toEqual(95);
+  });
 });
