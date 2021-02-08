@@ -11,6 +11,6 @@ describe('Calculator', () => {
     expect(calculator).toEqual({age: 30, lifeSpan: 95, planetYears: {'Mercury': 0.24, 'Venus': 0.62, 'Earth': 1, 'Mars': 1.88, 'Jupiter': 11.86}});
   });
   test('should return user age in Mercury years', () => {
-    expect(calculator.ageOnPlanet('mercury')).toEqual("On Mercury you are 125 years old!");
+    expect(calculator.ageOnPlanet('Mercury')).toEqual("On Mercury you are 125 years old!");
   });
 });
