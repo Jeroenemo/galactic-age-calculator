@@ -25,4 +25,8 @@ describe('Calculator', () => {
   test('should return user age in Earth years', () => {
     expect(calculator.ageOnPlanet('Earth')).toEqual("On Earth you are 30 years old!");
   });
+  test('should calculate life expectancy depending on user input', () => {
+    calculator.lifeExpectancy('false');
+    expect(calculator.lifeSpan).toEqual(90);
+  });
 });
