@@ -31,11 +31,16 @@ export default class Calculator {
   }
   yearsLeft(planet) {
     const yearsLeft = this.lifeSpan - this.age;
-    let years = Math.floor(yearsLeft / this.planetYears[planet]);
+    let years = Math.abs(Math.floor(yearsLeft / this.planetYears[planet]));
     if (yearsLeft >= 0) {
       return (`You have ${years} years to live!`);
     } else {
-      return (`You have surpassed your life expectancy by ${Math.abs(years)} years!`);
+      if (years === 1) {
+        return (`You have surpassed your life expectancy by ${years} year!`);
+      } else {
+        return (`You have surpassed your life expectancy by ${years} years!`);
+      }
+
     }
   }
 }
