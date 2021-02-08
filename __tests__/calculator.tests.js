@@ -26,23 +26,23 @@ describe('Calculator', () => {
     expect(calculator.ageOnPlanet('Earth')).toEqual("On Earth you are 30 years old!");
   });
   test('should calculate life expectancy depending on diet', () => {
-    calculator.lifeExpectancy('false');
+    calculator.lifeExpectancy(false, true, true);
     expect(calculator.lifeSpan).toEqual(90);
   });
   test('should calculate life expectancy depending on exercise', () => {
-    calculator.lifeExpectancy('true', 'false');
+    calculator.lifeExpectancy(true, false, true, false, false);
     expect(calculator.lifeSpan).toEqual(90);
   });
   test('should calculate life expectancy depending on seatbelt use', () => {
-    calculator.lifeExpectancy('true', 'true', 'false');
+    calculator.lifeExpectancy(true, true, false, false, false);
     expect(calculator.lifeSpan).toEqual(75);
   });
   test('should calculate life expectancy depending on smoking', () => {
-    calculator.lifeExpectancy('true', 'true', 'true', 'true',);
+    calculator.lifeExpectancy(true, true, true, true, false);
     expect(calculator.lifeSpan).toEqual(85);
   });
   test('should calculate life expectancy depending on drinking', () => {
-    calculator.lifeExpectancy('true', 'true', 'true', 'false', 'true');
+    calculator.lifeExpectancy(true, true, true, false, true);
     expect(calculator.lifeSpan).toEqual(85);
   });
 });

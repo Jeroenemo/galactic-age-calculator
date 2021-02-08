@@ -10,19 +10,19 @@ export default class Calculator {
       'Jupiter': 11.86
     };
   }lifeExpectancy(diet, exercise, seatbelt, smoke, drink) {
-    if (diet === 'false'){
+    if (!diet){
       this.lifeSpan -= 5;
     }
-    if (exercise === 'false'){
+    if (!exercise){
       this.lifeSpan -= 5;
     }
-    if (seatbelt === 'false'){
+    if (!seatbelt){
       this.lifeSpan -= 20;
     }
-    if (smoke === 'true'){
+    if (!!smoke){
       this.lifeSpan -= 10;
     }
-    if (drink === 'true'){
+    if (!!drink){
       this.lifeSpan -= 10;
     }
   }
