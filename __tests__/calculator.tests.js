@@ -20,6 +20,6 @@ describe('Calculator', () => {
     expect(calculator.ageOnPlanet('Mars')).toEqual("On Mars you are 15 years old!");
   });
   test('should return user age in Jupiter years', () => {
-    expect(calculator.ageOnPlanet('jupiter')).toEqual("On Jupiter you are 2 years old!");
+    expect(calculator.ageOnPlanet('Jupiter')).toEqual("On Jupiter you are 2 years old!");
   });
 });
