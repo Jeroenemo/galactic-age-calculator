@@ -32,7 +32,7 @@ export default class Calculator {
   yearsLeft(planet) {
     const yearsLeft = this.lifeSpan - this.age;
     let years = Math.abs(Math.floor(yearsLeft / this.planetYears[planet]));
-    const yearOrYears = (years === 1) ? 'year' : 'years'
+    const yearOrYears = (years === 1) ? 'year' : 'years';
     if (yearsLeft >= 0) {
       return (`You have ${years} ${yearOrYears} to live!`);
     } else {
