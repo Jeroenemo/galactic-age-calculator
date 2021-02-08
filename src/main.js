@@ -32,4 +32,9 @@ $(document).ready(function() {
     $('.mars-text').html(`${calculator.ageOnPlanet('Mars')} Furthermore, ${calculator.yearsLeft('Mars')}`);
     $('.jupiter-text').html(`${calculator.ageOnPlanet('Jupiter')} Furthermore, ${calculator.yearsLeft('Jupiter')}`);
   });
+  $('button#back').on('click', function() {
+    $('#planets').fadeOut('slow');
+    $('#monkey').fadeIn(3000);
+
+  });
 });

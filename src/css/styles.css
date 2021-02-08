@@ -1,3 +1,6 @@
+#planets {
+  display: none;
+}
 body {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -17,7 +20,7 @@ body {
   text-align: center;
   min-height: 200px;
   width: 500px;
-  bottom: 10vh;
+  bottom: 20vh;
   right: 45vw;
   
   background-color: whitesmoke;
@@ -40,13 +43,14 @@ body {
 	margin-top: -1.078em;
 	margin-right: -2.156em;
 }
-h2 {
-  margin-bottom: 20px;
-}
 h2, h3 {
   font-size: 1.3rem;
 }
-.button {
+h2 {
+  margin-bottom: 20px;
+}
+.button, #back {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.1rem;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -59,11 +63,15 @@ h2, h3 {
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
 }
-.button:hover {
+.button:hover, #back:hover {
   background-color: rgb(67, 67, 67);
 }
-#planets {
-  display: none;
+#back{
+
+  position: absolute;
+  right: 90%;
+  bottom: 90%;
+
 }
 #mercury,
 #venus,
@@ -72,13 +80,8 @@ h2, h3 {
 #jupiter {
   position: absolute;
   opacity: 1;
-  display: block;
-  height: auto;
   transition: .5s ease;
-  backface-visibility: hidden;
 }
-
-
 #mercury {
   right: 80%;
   bottom: 75%;
