@@ -10,6 +10,7 @@ $(document).ready(function() {
   });
   $('button#submit').on('click', function() {
     $('#monkey').fadeOut('slow');
+    $('#planets').fadeIn(3000);
     const name = $('#name').val();
     const age = parseInt($('#age').val());
     const diet = $('input:radio[name=diet]:checked').val();

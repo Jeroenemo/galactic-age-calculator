@@ -52,3 +52,45 @@ body {
 .button:hover {
   background-color: rgb(100, 190, 220);
 }
+#planets {
+  display: none;
+}
+#mercury,
+#venus,
+#earth,
+#mars,
+#jupiter {
+  position: absolute;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+#mercury {
+  right: 75%;
+  bottom: 50%;
+  width: 10%;
+}
+#venus {
+  right: 65%;
+  bottom: 25%;
+  width: 10%;
+}
+#earth {
+  right: 55%;
+  bottom: 65%;
+  width: 13%;
+}
+#mars {
+  right: 35%;
+  bottom: 10%;
+  width: 18%;
+}
+#jupiter {
+  right: 10%;
+  bottom: 45%;
+  width: 25%;
+}
