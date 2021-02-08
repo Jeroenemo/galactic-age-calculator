@@ -62,6 +62,6 @@ describe('Calculator', () => {
   });
   test('should return years lived past life expectancy if planet is mercury', () => {
     const calculator = new Calculator(100);
-    expect(calculator.yearsLeft("Mercury")).toEqual("You have surpassed your life expectancy by 5 years!");
+    expect(calculator.yearsLeft("Mercury")).toEqual("You have surpassed your life expectancy by 21 years!");
   })
 });
