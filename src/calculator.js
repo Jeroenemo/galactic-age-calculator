@@ -1,7 +1,7 @@
 export default class Calculator {
   constructor(age) {
     this.age = age;
-    this.lifeSpan = 90;
+    this.lifeSpan = 95;
     this.planetYears = {
       'Mercury': 0.24,
       'Venus': 0.62,
