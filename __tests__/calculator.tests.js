@@ -13,4 +13,7 @@ describe('Calculator', () => {
   test('should return user age in Mercury years', () => {
     expect(calculator.ageOnPlanet('Mercury')).toEqual("On Mercury you are 125 years old!");
   });
+  test('should return user age in Mercury years', () => {
+    expect(calculator.ageOnPlanet('venus')).toEqual("On Venus you are 48 years old!");
+  });
 });
