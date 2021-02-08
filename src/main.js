@@ -12,8 +12,8 @@ $(document).ready(function() {
     const input = $.trim($('#age').val());
 
     if (input  === '') {
-        alert("Please enter your age");
-        return false;
+      alert("Please enter your age");
+      return false;
     }
 
     $('#monkey').fadeOut('slow');
