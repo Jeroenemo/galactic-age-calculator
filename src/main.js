@@ -20,5 +20,10 @@ $(document).ready(function() {
     const drink = $('input:radio[name=drink]:checked').val();
     let calculator = new Calculator(name, age);
     calculator.lifeExpectancy(diet, exercise, seatbelt, smoke, drink);
+    $('.mercury-text').html(`${calculator.ageOnPlanet('Mercury')} Furthermore, ${calculator.yearsLeft('Mercury')}`);
+    $('.venus-text').html(`${calculator.ageOnPlanet('Venus')} Furthermore, ${calculator.yearsLeft('Venus')}`);
+    $('.earth-text').html(`${calculator.ageOnPlanet('Earth')} Furthermore, ${calculator.yearsLeft('Earth')}`);
+    $('.mars-text').html(`${calculator.ageOnPlanet('Mars')} Furthermore, ${calculator.yearsLeft('Mars')}`);
+    $('.jupiter-text').html(`${calculator.ageOnPlanet('Jupiter')} Furthermore, ${calculator.yearsLeft('Jupiter')}`);
   });
 });

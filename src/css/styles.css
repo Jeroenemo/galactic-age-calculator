@@ -94,3 +94,26 @@ body {
   bottom: 45%;
   width: 25%;
 }
+.middle  {
+  font-family: 'Stalinist One', cursive;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.container:hover #mercury,
+.container:hover #venus,
+.container:hover #earth,
+.container:hover #mars,
+.container:hover #jupiter {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+
+}
