@@ -22,4 +22,7 @@ describe('Calculator', () => {
   test('should return user age in Jupiter years', () => {
     expect(calculator.ageOnPlanet('Jupiter')).toEqual("On Jupiter you are 2 years old!");
   });
+  test('should return user age in Earth years', () => {
+    expect(calculator.ageOnPlanet('earth')).toEqual("On Earth you are 30 years old!");
+  });
 });
