@@ -29,4 +29,9 @@ export default class Calculator {
   ageOnPlanet(planet) {
     return (`On ${[planet]} you are ${Math.floor(this.age / this.planetYears[planet])} years old!`);
   }
+  yearsLeft(planet) {
+    const yearsLeft = this.lifeSpan - this.age;
+    let years = Math.floor(yearsLeft / this.planetYears[planet]);
+    return (`You have ${years} years to live!`);
+  }
 }

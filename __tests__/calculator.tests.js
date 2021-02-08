@@ -46,6 +46,6 @@ describe('Calculator', () => {
     expect(calculator.lifeSpan).toEqual(85);
   });
   test('should return years left if planet is mercury', () => {
-    expect(calculator.yearsLeft("mercury")).toEqual("You have NaN years to live");
+    expect(calculator.yearsLeft("mercury")).toEqual("You have 270 years to live!");
   });
 });
