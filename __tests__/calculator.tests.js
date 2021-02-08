@@ -76,4 +76,8 @@ describe('Calculator', () => {
     const calculator = new Calculator(100);
     expect(calculator.yearsLeft("Mars")).toEqual("You have surpassed your life expectancy by 3 years!");
   });
+  test('should return years lived past life expectancy if planet is earth', () => {
+    const calculator = new Calculator(100);
+    expect(calculator.yearsLeft("Jupiter")).toEqual("You have surpassed your life expectancy by 3 years!");
+  });
 });
