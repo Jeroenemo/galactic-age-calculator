@@ -26,7 +26,7 @@ describe('Calculator', () => {
     expect(calculator.ageOnPlanet('Jupiter')).toEqual("On Jupiter you are 2 years old!");
   });
   test('should calculate life expectancy depending on diet', () => {
-    calculator.lifeExpectancy(false, true, true);
+    calculator.lifeExpectancy(false, true, true, false, false);
     expect(calculator.lifeSpan).toEqual(90);
   });
   test('should calculate life expectancy depending on exercise', () => {
