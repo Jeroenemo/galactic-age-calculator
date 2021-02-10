@@ -9,7 +9,8 @@ export default class Calculator {
       'Mars': 1.88,
       'Jupiter': 11.86
     };
-  }lifeExpectancy(diet, exercise, seatbelt, smoke, drink) {
+  }
+  lifeExpectancy(diet, exercise, seatbelt, smoke, drink) {
     if (!diet){
       this.lifeSpan -= 5;
     }
